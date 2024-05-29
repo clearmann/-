@@ -1,0 +1,44 @@
+Server:
+  Mode: release # debug | release
+  Port: :8080
+  DbType: "mysql"
+  DbAutoMigrate: true # 是否自动迁移数据库表结构 (表结构没变可以不迁移, 提高启动速度)
+  DbLogMode: "error" # 日志级别 silent, error, warn, info, 默认 info
+  StartTime: "2024-05-28"
+  MachineID: 1
+Mysql:
+  Host: "127.0.0.1"
+  Port: "3306"
+  Dbname: "test"
+  Username: "root"
+  Password: "liuman.."
+Redis:
+  DB: 7
+  Addr: "127.0.0.1:6379"
+  Password: ""
+Session:
+  Name: "mysession"
+  Salt: "salt"
+  MaxAge: 600 # second
+JWT:
+  Secret: "Clearmann"
+  Expire: 24 # hour
+  Issuer: "gvb"
+QiNiu:
+  Enable: false
+  AccessKey: ""
+  SecretKey: ""
+  Bucket: ""
+  CDN: "clearmann"
+  Zone: "华北-河北"
+  Size: 5
+QQ:
+  AppID: 1
+  Key: ""
+  Redirect: ""
+Email:
+  EmailFrom: "1582918813@qq.com"
+  EmailPassword: "npponjcxgzlkfhcj"
+  SMTPHost: "smtp.qq.com"
+  SMTPPort: 587
+  EmailWorkerNumber : 10
